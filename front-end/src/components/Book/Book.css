@@ -1,0 +1,259 @@
+.Book {
+    padding-bottom: 10rem;
+    min-height: 100vh;
+}
+
+.Book-header {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 50vh;
+    position: relative;
+    left: 5%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+}
+
+.Book-current-user-utils-wrapper {
+    display: flex;
+    width: 90%;
+    height: 20vh;
+    position: relative;
+    left: 5%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+}
+
+.Book-current-user-status-wrapper {
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Book-Thumbnail-section-wrapper {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem
+}
+
+.Book-Thumbail-wrapper {
+    height: 75%;
+    width: 100%;
+}
+
+.Book-Thumbail-wrapper > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.Book-details-section-wrapper {
+    width: 70%;
+    text-align: left;
+}
+
+.Book-details-title-wrapper {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 6rem;
+}
+
+.Book-details-title-wrapper > p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    overflow: hidden;
+}
+
+.Book-details-author-wrapper {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 3rem;
+    padding-top: 1rem;
+}
+
+.Book-details-author-wrapper > p {
+    display: inline;
+    font-size: 1rem;
+    font-weight: bolder;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Book-details-author-wrapper > p:hover {
+    text-decoration: underline;
+}
+
+.Book-details-description-wrapper {
+    height: calc(100% - 9.5rem);
+    overflow: hidden;
+}
+
+.Book-details-description-wrapper > p {
+    text-align: justify;
+    margin-right: 0.5rem;
+    padding-right: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.Book-extras {
+    height: 25vh;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.Book-characters-wrapper > .MuiChip-root {
+    margin: 0.1rem;
+    height: 2rem;
+    max-width: 20rem;
+}
+
+.Book-characters-wrapper.mobile > .MuiChip-root {
+    max-width: 10rem;
+}
+
+.Book-characters-wrapper > .MuiChip-root > span {
+    word-break: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.Book-characters-wrapper {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Book-places-wrapper {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Book-places-wrapper > .MuiChip-root {
+    margin: 0.1rem;
+    height: 2rem;
+    max-width: 20rem;
+}
+
+.Book-places-wrapper.mobile > .MuiChip-root {
+    max-width: 10rem;
+}
+
+.Book-places-wrapper > .MuiChip-root > span {
+    word-break: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.Book-author-works-wrapper {
+    height: 20rem;
+    overflow-y: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.Book-author-works-title-wrapper {
+    height: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.Book-author-works-title-wrapper > p {
+    font-family: cursive;
+    color: black;
+    font-variant: all-petite-caps;
+}
+
+.Book-footer {
+    height: 25vh;
+}
+
+
+/* -------------------- Mobile Specific ------------------------------------ */
+
+.Book.mobile1200 > .Book-header {
+    display: block;
+    height: 80vh;
+}
+
+.Book.mobile1200 > .Book-header > .Book-Thumbnail-section-wrapper {
+    width: 100%;
+    height: 50%;
+}
+
+.Book.mobile1200 > .Book-header > .Book-Thumbnail-section-wrapper > .Book-Thumbail-wrapper {
+    height: 100%;
+}
+
+.Book.mobile1200 > .Book-header > .Book-Thumbnail-section-wrapper > .Book-Thumbail-wrapper > img {
+    height: 90%;
+    position: relative;
+    top: 5%;
+}
+
+.Book.mobile1200 > .Book-header > .Book-details-section-wrapper {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+.Book.mobile1200 > .Book-header > .Book-details-section-wrapper > .Book-details-title-wrapper {
+    height: 5rem;
+}
+
+.Book.mobile1200 > .Book-header > .Book-details-section-wrapper > .Book-details-title-wrapper > p {
+    font-size: 1.25rem;
+}
+
+.Book.mobile1200 > .Book-header > .Book-details-section-wrapper > .Book-details-author-wrapper {
+    padding-top: 0.5rem;
+}
+
+.Book.mobile1200 > .Book-header > .Book-details-section-wrapper > .Book-details-description-wrapper {
+    padding: 0.5rem;
+}
+
+.Book.mobile1200 > .Book-header > .Book-details-section-wrapper > .Book-details-description-wrapper > p {
+    text-align: center;
+}
+
+.Book.mobile1200 > .Book-extras {
+    margin-top: 2rem;
+}
+
+.Book.mobile1200 > .Book-author-works-wrapper {
+    margin-top: 2rem;
+}
